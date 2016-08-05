@@ -1,5 +1,29 @@
 window.onload = function(){
 	waterfall('main','box');
+	var dataInt = {"data":[{"src":"51.jpg"},{"src":"52.jpg"},
+		{"src":"53.jpg"},{"src":"54.jpg"},
+		{"src":"55.jpg"},{"src":"56.jpg"},
+		{"src":"57.jpg"},{"src":"58.jpg"},
+		{"src":"59.jpg"},{"src":"60.jpg"}]};
+	window.onscroll = function(){
+		var oParent = document.getElementById('main');
+		if(checkScrollSlide()){
+			//将数据快渲染到当前面的尾部
+			for(var i = 0; i < dataInt.data.length; i++){
+				var oBox = document.createElement('div');
+				oBox.className = 'box';
+				oParent.appendChild(oBox);
+				var oPic = document.createElement('div');
+				oPic.className = 'pic';
+				oBox.appendChild(oPic);
+				var oImg = document.createElement('img');
+				oImg.src = "images/" + dataInt.data[i].src;
+				oPic.appendChild(oImg);
+			}
+			waterfall('main','box');
+			
+		}
+	};
 };
 
 function waterfall(parentId,className){
@@ -10,7 +34,7 @@ function waterfall(parentId,className){
 	//console.log(oBox.length);
 	// 计算整个页面的页数(页面宽/box的宽度)
 	var oBoxW = oBoxs[0].offsetWidth;
-	//console.log(oBoxW);
+	//consol e.log(oBoxW);
 	var cols = Math.floor(document.documentElement.clientWidth / oBoxW);
 	//设置main的宽度
 	//console.log(cols);
@@ -49,4 +73,17 @@ function getMinhIndex(arr,val){
 		}
 	}
 }
+
+// 检测是否加载了数据块的加载条件
+function checkScrollSlide(){
+	var oParent = document.getElementById('main');
+	var oBoxs = getByClass(oParent,'box');
+	var lastBoxH = oBoxs[oBoxs.length - 1].offsetTop +Math.floor(oBoxs[oBoxs.length - 1].offsetHeight / 2);
+	var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+	// console.log("scrollTop: " +scrollTop);
+	var height = document.body.clientHeight || document.documentElement.clientHeight;
+	console.log("height: " +height);
+	return (lastBoxH < scrollTop + height) ? true : false;
+}
+
 
