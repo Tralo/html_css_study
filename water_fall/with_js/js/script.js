@@ -85,5 +85,3 @@ function checkScrollSlide(){
 	console.log("height: " +height);
 	return (lastBoxH < scrollTop + height) ? true : false;
 }
-
-
