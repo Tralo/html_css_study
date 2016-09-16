@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
 	<title>bing search</title>
@@ -87,7 +86,7 @@
 	
 </div>
 <div class="suggest" id="search-suggest"  style="display: none">
-		<ul>
+		<ul id="search-result">
 			<li>搜索结果1</li>
 			<li>搜索结果2</li>
 			<li>搜索结果3</li>
@@ -99,12 +98,36 @@
 <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
 <script type="text/javascript">
   $('#search_input').bind('keyup',function(){
-	$('#search-suggest').show().css({
-		top:$('#search-form').offset().top + $('#search-form').height() + 11,
-		left:$('#search-form').offset().left,
-		position: 'absolute'
-	});
+  	var searchText =  $('#search_input').val();
+  	$.get('http://api.bing.com/qsonhs.aspx?q=' + searchText, function(data){
+  		var d = data.AS.Results[0].Suggests;
+  		console.log('d');
+  		var html = '';
+  		for(var i = 0; i < d.length; i++){
+  			html += '<li>'+d[i].Txt+'</li>';
+  		}
+  		$('#search-suggest').html(html);
+  		$('#search-suggest').show().css({
+			top:$('#search-form').offset().top + $('#search-form').height() + 11,
+			left:$('#search-form').offset().left,
+			position: 'absolute'
+		});
+
+  	},'json');
+
+	
  });
+  $(document).bind('click',function(){
+  	$('#search-suggest').hide();
+  });
+
+  $(document).delegate('li','click',function(){
+  	var keyword = $(this).text();
+  	location.href = 'http://cn.bing.com/search?q='+ keyword;
+  });
+
+ 
+
 
 
  	
