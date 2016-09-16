@@ -78,12 +78,15 @@
 <div class="bg-div">
 	<div class="search-box">
 		<div class="logo"></div>
-		<form>
-			<input type="text" class="search-input-text" />
+		<form id="search-form" action="https://cn.bing.com/search"  target="_blank">
+			<input type="text" class="search-input-text" name="q" id="search_input" autocomplete="off" />
 			<input type="submit" class="search-input-button" value="" />
 		</form>
 	</div>
-	<div class="suggest" id="search-suggest"  style="display: none">
+	
+	
+</div>
+<div class="suggest" id="search-suggest"  style="display: none">
 		<ul>
 			<li>搜索结果1</li>
 			<li>搜索结果2</li>
@@ -92,8 +95,19 @@
 			<li>搜索结果5</li>
 		</ul>
 
-	</div>
 </div>
+<script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+  $('#search_input').bind('keyup',function(){
+	$('#search-suggest').show().css({
+		top:$('#search-form').offset().top + $('#search-form').height() + 11,
+		left:$('#search-form').offset().left,
+		position: 'absolute'
+	});
+ });
 
+
+ 	
+ </script>	
 </body>
 </html>
