@@ -49,20 +49,51 @@
 			top: 200px;
 			left: 300px;
 		}
+		.suggest{
+			width: 388px; 
+			background-color: #fff;
+			border: 1px solid #999;
+		}
+		.suggest ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.suggest ul li{
+			padding: 3px;
+			font-size: 14px;
+			line-height: 25px;
+			cursor: pointer;
+		}
+		.suggest ul li:hover{
+			text-decoration: underline;
+			background-color: #e5e5e5;
+		}
+
 
 	</style>
 
 </head>
 <body>
-	<div class="bg-div">
-		<div class="search-box">
-			<div class="logo"></div>
-			<form>
-				<input type="text" class="search-input-text" />		
-				<input type="submit" class="search-input-button" value="" />		
-			</form>
-		</div>
+<div class="bg-div">
+	<div class="search-box">
+		<div class="logo"></div>
+		<form>
+			<input type="text" class="search-input-text" />
+			<input type="submit" class="search-input-button" value="" />
+		</form>
 	</div>
-	
+	<div class="suggest" id="search-suggest"  style="display: none">
+		<ul>
+			<li>搜索结果1</li>
+			<li>搜索结果2</li>
+			<li>搜索结果3</li>
+			<li>搜索结果4</li>
+			<li>搜索结果5</li>
+		</ul>
+
+	</div>
+</div>
+
 </body>
 </html>
