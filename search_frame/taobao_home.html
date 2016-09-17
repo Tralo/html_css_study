@@ -4,11 +4,21 @@
 	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 	<title>taobao demo</title>
 	<style type="text/css">
+		@font-face{
+			font-family:iconfont;
+			src:url(http://g.tbcdn.cn/tb/icon-font/1.1.5/iconfont.eot);
+			src: url(http://g.tbcdn.cn/tb/icon-font/1.1.5/iconfont.eot?#iefix) format("embedded-opentype"),
+			url(http://g.tbcdn.cn/tb/icon-font/1.1.5/iconfont.woff) format("woff"),
+			url(http://g.tbcdn.cn/tb/icon-font/1.1.5/iconfont.ttf) format("truetype"),
+			url(http://g.tbcdn.cn/tb/icon-font/1.1.5/iconfont.svg#icons) format("svg")}
 		body{
 			font: 12px/1.5 tahoma,arial,sans-serif;
 		}
 		a{
 			text-decoration: none;
+		}
+		.search-container{
+			position: relative;
 		}
 		.search-tips{
 			float: right;
@@ -41,7 +51,19 @@
 			border: 0 none;
 			outline: 0;
 			background-color: #fff;
+		}
+		.search-common-panel i{
+			position: absolute;
+			top: 14px;
+			left: 86px;
+			z-index: 2;
+			color: #ccc;
 
+		}
+		.iconfont{
+			font-family: iconfont;
+			font-size: 12px;
+			font-style: normal;
 		}
 	</style>
 </head>
@@ -62,8 +84,8 @@
 				<button type="submit" class="btn-search"></button>
 			</div>
 			<div class="search-common-panel">
-				<input type="text" />		
-				<i></i>	
+				<input type="text" x-webkit-speech="" />		
+				<i class="iconfont">ő</i>	
 			</div>
 			
 			</form>
