@@ -53,18 +53,19 @@
 			background-color: #fff;
 			border: 1px solid #999;
 		}
-		.suggest ul{
+		#search-suggest{
 			list-style: none;
+			display: block;
 			margin: 0;
 			padding: 0;
 		}
-		.suggest ul li{
+		#search-suggest li{
 			padding: 3px;
 			font-size: 14px;
 			line-height: 25px;
 			cursor: pointer;
 		}
-		.suggest ul li:hover{
+		#search-suggest li:hover{
 			text-decoration: underline;
 			background-color: #e5e5e5;
 		}
@@ -99,9 +100,8 @@
 <script type="text/javascript">
   $('#search_input').bind('keyup',function(){
   	var searchText =  $('#search_input').val();
-  	$.get('http://api.bing.com/qsonhs.aspx?q=' + searchText, function(data){
+  	$.get('http://localhost/ajax_get.php?keyword=' + searchText, function(data){
   		var d = data.AS.Results[0].Suggests;
-  		console.log('d');
   		var html = '';
   		for(var i = 0; i < d.length; i++){
   			html += '<li>'+d[i].Txt+'</li>';
