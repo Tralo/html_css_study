@@ -85,6 +85,7 @@ body{
 
 .nav_mid_left,.nav_mid_right{
 	float: left;
+	display: inline;
 }
 .nav_mid_left{
 	width: 680px;
@@ -119,6 +120,55 @@ body{
 	border: 1px solid #fff;
 }
 .ad{
-	height: 310px;
+	height: 320px;
 	overflow: hidden;
+	margin-top: 5px;
+}
+.main{
+	clear: left;
+	height: 250px;
+	background: #fff;
+	margin-top: 5px;
+}
+.news{
+	width: 340px;
+	border: 1px solid #e8e8e8;
+}
+.course{
+	width: 410px;
+	border: 1px solid #e8e8e8;
+	background: #00f;
+	margin: 0 7px;
+}
+.sidebar{
+	width: 230px;
+	border: 1px solid #e8e8e8;
+	background: #0f0;
+}
+.news,.course,.sidebar{
+	height: 250px;
+	float: left;
+}
+.title{
+	height: 35px;
+	border: 2px solid #e8e8e8;
+}
+.title_left{
+	width: 70%;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	font-weight: bold;
+	color: #786fff;
+	float: left;
+	line-height: 35px;
+	padding-left: 20px;
+}
+.title_right{
+	width: 20%;
+	float: right;
+	line-height: 35px;
+}
+.title_right a{
+	text-decoration: none;
+	color: #999999;
 }
