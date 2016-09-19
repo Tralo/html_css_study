@@ -59,23 +59,55 @@ body{
 	color: #C00;
 }
 .nav {
+	clear: left;
 	height: 40px;
 }
 .nav_left {
 	width: 10px;
 	background: url(../images/nav_left.jpg) no-repeat;
+	float: left;
+	margin: 0;
+	border: 0;
 }
 .nav_mid {
 	width: 980px;
 	background: url(../images/nav_bg.jpg) repeat-x;
 	line-height: 40px;
+	border: 0;
 }
 .nav_right {
 	width: 10px;
 	background: url(../images/nav_right.jpg) no-repeat;
+	border: 0;
 }
 .nav_left, .nav_mid, .nav_right {
 	height: 40px;
 	float: left;
 	display: inline;
+}
+
+
+
+.big{
+	clear: left;
+	height: 40px;
+}
+.left{
+	width: 10px;
+	height: 40px;
+	float: left;
+	background-color: red;
+	
+}
+.mid{
+	width: 980px;
+	height: 40px;
+	float: left;
+	background-color: blue;
+}
+.right{
+	width: 10px;
+	height: 40px;
+	float: left;
+	background-color: green;
 }
