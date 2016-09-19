@@ -14,6 +14,7 @@ body{
 .top_content{
 	width: 1000px;
 	margin: 0 auto;
+	line-height: 27px;
 }
 .top_content li{
 	list-style-image: url(../images/li_bg.gif);
@@ -54,6 +55,26 @@ body{
 }
 .tel{
 	font-family: "微软雅黑";
-	font-size: 16px;
+	font-size: 22px;
 	color: #C00;
+}
+.nav{
+	height: 40px;
+}
+.nav_left{
+	width: 10px;
+	background: url(../images/nav_left.jpg) no-repeat;
+}
+.nav_mid{
+	width: 980px;
+	background: url(../images/nav_bg.jpg) repeat-x;
+}
+.nav_right{
+	width: 10px;
+	background: url(../images/nav_right.jpg) no-repeat;
+	
+}
+.nav_left,.nav_mid,.nav_right{
+	height: 40px;
+	float: left;
 }
