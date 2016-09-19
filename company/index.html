@@ -5,6 +5,15 @@
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="js/setHomeSetFav.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/myfocus-2.0.1.min.js"></script>
+	<script type="text/javascript" src="js/mf-pattern/mF_YSlider.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/mf-pattern/mF_YSlider.css" />
+	<script type="text/javascript">
+		myFocus.set({
+			id:'picBox',
+			time:3
+		})
+	</script>
 </head>
 <body>
 	<div class="top">
@@ -62,11 +71,20 @@
 				</div>
 			</div>
 			<div class="nav_right"></div>
+		</div><!-- nav结束 -->
+		<div class="ad" id="picBox">
+			<div class="loading"><img src="images/loading.gif" alt="结束前"></div>
+			<idv class="pic">
+				<ul>
+					<li><img src="images/ad2.jpg"></li>
+					<li><img src="images/ad3.jpg"></li>
+					<li><img src="images/ad4.jpg"></li>
+				</ul>
+			</idv>
 		</div>
-
 	</div><!-- wrap结束 -->
 
 	
-
+	
 </body>
 </html>
