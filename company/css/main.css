@@ -187,4 +187,24 @@ body{
 }
 .news_list{
 	clear: left;
+	margin-top: 20px;
+}
+.news_list ul li{
+	list-style: none;
+	background: url(../images/list.jpg) no-repeat;
+	padding-left: 10px;
+	margin: 8px;
+	border: 1px dotted #ccc;
+}
+.news_list a:link,.news_list a:visited{
+	text-decoration: none;
+	color: #000;
+}
+.news_list a:hover,.news_list a:active{
+	text-decoration: none;
+	color: #f00;
+}
+.news_list ul li span{
+	color: #999;
+	float: right;
 }
