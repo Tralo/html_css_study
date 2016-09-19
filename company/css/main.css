@@ -58,23 +58,24 @@ body{
 	font-size: 22px;
 	color: #C00;
 }
-.nav{
+.nav {
 	height: 40px;
 }
-.nav_left{
+.nav_left {
 	width: 10px;
 	background: url(../images/nav_left.jpg) no-repeat;
 }
-.nav_mid{
+.nav_mid {
 	width: 980px;
 	background: url(../images/nav_bg.jpg) repeat-x;
+	line-height: 40px;
 }
-.nav_right{
+.nav_right {
 	width: 10px;
 	background: url(../images/nav_right.jpg) no-repeat;
-	
 }
-.nav_left,.nav_mid,.nav_right{
+.nav_left, .nav_mid, .nav_right {
 	height: 40px;
 	float: left;
+	display: inline;
 }
