@@ -277,7 +277,6 @@ body{
 	width: 220px;
 	height: 350px;
 	border: 1px solid #e8e8e8;
-	background-color: #9fc;
 	float: left;
 }
 .list_box{
@@ -289,3 +288,35 @@ body{
 	float: right;
 }
 
+.news_type h2{
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #666;
+	background:url(../images/title_bg.gif) repeat-x;
+	padding-left: 20px;
+}
+
+.news_type_content{
+	height: 365px;
+	background: url(../images/content_bg.gif) repeat-x;
+}
+.news_type_content li{
+	list-style-type: none;
+	height: 30px;
+	line-height: 30px;
+
+}
+.news_type_content li a{
+	color: #666;
+	text-decoration: none;
+	background: url(../images/li_bg.gif) no-repeat left center;
+	padding-left: 15px;
+	display: block;
+}
+.news_type_content li a:hover{
+	color: #009CDF;
+	background: url(../images/li_bg2.gif) no-repeat left center;
+	background-color: #f2f2f2;
+}
