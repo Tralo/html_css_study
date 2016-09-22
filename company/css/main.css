@@ -283,7 +283,6 @@ body{
 	width: 770px;
 	min-height: 350px;
 	_height: 350px;
-	background-color: #f9f;
 	border: 1px solid #e8e8e8;
 	float: right;
 }
@@ -320,3 +319,14 @@ body{
 	background: url(../images/li_bg2.gif) no-repeat left center;
 	background-color: #f2f2f2;
 }
+.list_box h2{
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #666;
+	height: 35px;
+	line-height: 35px;
+	background: url(../images/type_bg.png) repeat-x;
+	padding-left: 20px;
+}
+
+
