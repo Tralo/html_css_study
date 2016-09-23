@@ -285,6 +285,7 @@ body{
 	_height: 350px;
 	border: 1px solid #e8e8e8;
 	float: right;
+	background-color: #fff;
 }
 
 .news_type h2{
@@ -349,3 +350,20 @@ body{
 	background-color: #cc11cc;
 }
 
+.list_box h1{
+	font-family: "微软雅黑";
+	font-size: 20px;
+	text-align: center;
+	margin: 10px 0;
+}
+.newsInfo{
+	color: #666;
+	text-align: center;
+	border-bottom: 1px solid #666;
+}
+.newsContent{
+	font-size: 14px;
+	padding: 20px;
+	line-height: 25px;
+	text-indent: 2em;
+}
