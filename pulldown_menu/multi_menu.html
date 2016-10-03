@@ -31,11 +31,23 @@
 		.navmenu li:hover ul{
 			display: block;
 			width: 80px;
+			position: relative;
 		}
 		.navmenu li:hover ul li ul{
 			display: none;
 
 		}
+		.navmenu li ul li:hover ul{
+			display: block;
+			top: 0px;
+			left: 80px;
+			position: absolute;
+		}
+		.navmenu li a:hover{
+			background: #900;
+			color: #fff;
+		}
+		
 	</style>
 </head>
 <body>
