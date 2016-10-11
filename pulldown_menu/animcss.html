@@ -22,6 +22,9 @@
 		.top-nav:after{
 			clear: both;
 		}
+		.top-nav{
+			zoom: 1;
+		}
 
 		.top-nav li{
 			float: left;
@@ -54,6 +57,7 @@
 			border-radius: 3px;
 			opacity: 0;
 			margin: 20px 0 0 0;
+			_margin: 0;
 			transition: all .2s ease-in-out;
 		}
 		.top-nav li:hover > ul{
@@ -72,6 +76,7 @@
 			width: 130px;
 			display: block;
 			float: none;
+			_height: 10px;
 		}
 		.top-nav ul a:hover{
 			background-color: #0186ba;
@@ -84,7 +89,52 @@
 		.top-nav ul li:last-child > a{
 			border-radius: 0 0 3px 3px;
 		}
+		.top-nav ul li:first-child > a:before{
+			content:"";
+			position: absolute;
+			left: 40px;
+			top: -6px;
+			border-left: 6px solid transparent;
+			border-right: 6px solid transparent;
+			border-bottom: 6px solid #444;
+		}
+		.top-nav ul li:first-child > a:hover:before{
+			border-bottom-color: #04acec;
+		}
+		.top-nav ul ul{
+			top: 0;
+			left: 150px;
+			margin: 0 0 0 20px;
+			box-shadow: -1px 0 0 rgba(255,255,255,.3);
+			_margin: 0;
+		}
+		.top-nav ul ul li:first-child a:before{
+			left: -6px;
+			top: 50%;
+			margin-top: -6px;
+			border-left: 0;
+			border-bottom: 6px solid transparent;
+			border-top: 6px solid transparent;
+			border-right: 6px solid #3b3b3b;
+		}
+		.top-nav ul ul li:first-child a:hover:before{
+			border-right-color: #0299d3;
+			border-bottom-color: transparent;
+		}
 	</style>
+	<script type="text/javascript" scr="jquery-3.1.0.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			if($.browser.msie&&.browser.version.substr(0,1) < 7){
+				$('li').has('ul').mouseover(function(){
+					$(this).children('ul').css('visibility','visible');
+				}).mouseout(function(){
+					$(this).children('ul').css('visibility','hidden');
+				});
+			}
+		})
+		
+	</script>
 </head>
 <body>
 	<ul class="top-nav">
