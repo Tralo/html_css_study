@@ -1,0 +1,14 @@
+/* 共用 */
+.comWidth{width: 1000px; margin-left: auto;margin-right: auto; }
+.leftArea{float: left;}
+.rightArea{float: right;}
+
+/* topBar */
+.topBar{height: 31px;background-color: #f7f7f7;line-height: 31px;}
+.collection{background: url(../images/icon/collection.jpg) left center no-repeat; padding-left: 19px;}
+.topBar a:hover{color: red;}
+
+/* logo */
+.logoBar{height: 85px; background: #1d7ad9;}
+.logo{padding-left: 41px; padding-top: 13px;}
+
