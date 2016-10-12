@@ -26,7 +26,7 @@
 .shopClass{width: 190px; position: relative;}
 .shopClass h3{text-align: center;line-height: 35px;}
 .shopClass i{width: 11px; height: 7px;overflow: hidden;background: url(../images/icon/down.jpg) left center no-repeat;display: inline-block;margin-left: 11px;}
-.nav,.shopClass{font-family: "Microsoft YaHei","微软雅黑";}
+.nav,.shopClass h3{font-family: "Microsoft YaHei","微软雅黑";}
 .nav{line-height: 35px;}
 .nav li{float: left;}
 .nav a{height: 35px; display: inline-block;padding: 0 35px; color: #fff;}
@@ -36,7 +36,29 @@
 .shopClass_item dt{height: 22px; background: url(../images/icon/shop_sj.jpg) right center no-repeat;}
 .shopClass_item .b{/* font-family: "Microsoft YaHei","微软雅黑"; font-size: 14px; font-weight: bold; */ font:14px/1 "Microsoft YaHei","微软雅黑" bold;}
 .shopClass_item a{color: #fff;}
+.shopClass_item a:hover{text-decoration: underline;}
 .shopClass_item .aLink{width:48px;height:20px; background: url(../images/icon/aLink_bg.png) left center no-repeat; line-height: 20px; text-align: center;display: inline-block;text-decoration: underline;}
+/* shopClass_item active 状态*/
+.shopClass_item_active{background-color: #fff;border-left: 1px solid #4593fd;}
+.shopClass_item_active dt{background: none;}
+.shopClass_item_active a{color: #000;}
+.shopClass_item_active .aLink{color: #fff; text-decoration: none;}
+/* 弹出的菜单 */
+.shopClass_list{width: 568px; border: #ccc solid 1px;position: absolute;left: 190px;top: 35px;}
+.shopList_cont{padding: 0 20px;}
+.shopList_item{padding: 10px 0;border-bottom: 1px solid #ccc;}
+.shopList_item dt{color: #4b87d9; font-weight: bold;height: 24px;ine-height: 24px;}
+.shopList_item dd{padding-left: 68px; line-height: 24px; margin-top: -24px;}
+.shopList_item dd a{margin-right: 12px;}
+.shopList_links{padding: 15px 0;}
+.shopList_links a{color: #fff;background-color: #2785e6;height: 26px; line-height: 26px;font-size: 12px;display: inline-block;padding: 0 14px 0 8px;margin-right: 10px;}
+.shopList_links span{width: 11px;height: 7px;background: url(../images/icon/shop_sj.jpg) left center no-repeat;display: inline-block;margin-left: 7px;}
+
+
+
+
+
+
 
 
 
