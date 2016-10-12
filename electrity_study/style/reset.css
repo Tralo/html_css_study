@@ -7,9 +7,11 @@ li{list-style:none;}
 input,select,textarea{outline:none;border:none; background:none;}
 textarea{resize:none;}
 a{text-decoration:none; color:#656565;}
-
 /*清浮动*/
 .clearfix:after{content:"";display:block;clear:both;font-weight: bold;}
 .clearfix{zoom:1;}
+
+.fl{float: left;}
+.fr{float: right;}
 
 
