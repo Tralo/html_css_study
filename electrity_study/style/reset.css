@@ -9,7 +9,7 @@ textarea{resize:none;}
 a{text-decoration:none; color:#656565;}
 /*清浮动*/
 .clearfix:after{content:"";display:block;clear:both;font-weight: bold;}
-.clearfix{zoom:1;}
+.clearfix{zoom:1;clear:both;}
 .hide{display: none;}
 .show{display: block;}
 
